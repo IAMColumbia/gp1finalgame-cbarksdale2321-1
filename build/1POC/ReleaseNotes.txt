@@ -6,4 +6,4 @@ Release Notes version 1 POC
 -Adds camera movement via WASD
     - Camera doesn't exceed bounds of grid
 
--Can place and archer on any tile
+-Can place an archer on any tile
