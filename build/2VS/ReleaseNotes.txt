@@ -1,1 +1,17 @@
-Release Notes version 2 Vertical Slice
+---Release Notes---
+
+Adds functional AI pathing via A* method
+    -Can be tested by right clicking one tile, right clicking another tile and then pressing space
+    -This will calculate the shortest possible path(including ANY obstructions) that will be used by the monster
+    -You can place archers on tiles and the monster will avoid those tiles and create a new path
+
+Adds buttons that will allow you select an archer
+    -Each archer costs different amounts of currency and when you select one, RESPECT will decrease
+
+More archer functionality
+    -After selecting an archer you may place it on any tile that is highlighted green
+    -If highlighted red, there is another archer on that tile and you may not place another on that tile
+
+Monster functionality
+    -Since AI pathing is complete, all that needs to be done is to hook it up to the monsters
+    -Right now, you may spawn a random monster by pressing the "Next Wave" button
