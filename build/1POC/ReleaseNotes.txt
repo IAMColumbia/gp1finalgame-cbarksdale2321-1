@@ -1,1 +1,9 @@
 Release Notes version 1 POC
+
+-Creates Grid that can load in specific blocks from a text file(Referenced a video for the text file bits)
+    -Useful if time allows for the creation of seperate levels
+
+-Adds camera movement via WASD
+    - Camera doesn't exceed bounds of grid
+
+-Can place an archer on any tile
