@@ -1,0 +1,60 @@
+								--------Documentation/Developer Notes--------
+
+Game: Castle Defender
+Engine: Unity2D
+Genre: Strategy
+Credits: Charles Barksdale and various other sources as documented in code(Stack Overflow, Unity Forums, etc.)
+
+                				-----Documentation Timeline-----
+    ---POC Notes---
+
+-Creates Grid that can load in specific blocks from a text file(Referenced a video for the text file bits)
+    -Useful if time allows for the creation of seperate levels
+
+-Adds camera movement via WASD
+    - Camera doesn't exceed bounds of grid
+
+-Can place and archer on any tile
+
+    ---VS Notes---
+
+Adds functional AI pathing via A* method
+    -Can be tested by right clicking one tile, right clicking another tile and then pressing space
+    -This will calculate the shortest possible path(including ANY obstructions) that will be used by the monster
+    -You can place archers on tiles and the monster will avoid those tiles and create a new path
+
+Adds buttons that will allow you select an archer
+    -Each archer costs different amounts of currency and when you select one, RESPECT will decrease
+
+More archer functionality
+    -After selecting an archer you may place it on any tile that is highlighted green
+    -If highlighted red, there is another archer on that tile and you may not place another on that tile
+
+Monster functionality
+    -Since AI pathing is complete, all that needs to be done is to hook it up to the monsters
+    -Right now, you may spawn a random monster by pressing the "Next Wave" button
+
+    ---Final Build Notes---
+
+UI Wrap up
+    -Player can now click on placed archer and see its detection range.
+    -Player now has a control menu that displays the objective and controls. Also allows for quitting.
+    -Lose screen added
+
+Projectile functionality
+    -Projectiles are now fully funtionally and are set as inactive when hitting a monster. Resuable Projectiles (Memory save)
+    -Projectiles only shot when enemy is in range of the specified archer
+
+    
+Monster functionality
+    -Monsters are now fully hooked up to A* pathfinding
+    -Monsters now have health with health bar displayed over their head
+    -Monsters are now no longer destroyed, but set as inactive when dead and reused for a later wave. (Memory save)
+
+                -----Post-Production Log-----
+
+Overall, this was a fun project to work on. It taught me some new things about pathfinding as well as what the Unity engine is capable of.
+I ran into a few roadblocks however such as getting the A* algorithm hooked up to the monsters. I think I spent about a week on doing only
+that which caused me to lose some time. This caused some features initially intended not to be in the final game. Features such as, monsters attacking archers, 
+selling and upgrading system, different levels, and monsters attacking the Castle all did not make it into the game which I'm pretty bummed out about. All in all, I had a good
+time learning and creating this product. Hopefully I can work on it even more and make it something bigger than initially intended.
